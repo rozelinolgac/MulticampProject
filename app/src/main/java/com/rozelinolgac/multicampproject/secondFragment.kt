@@ -21,7 +21,7 @@ class secondFragment : Fragment(R.layout.fragment_second) {
         textViewName.text=args.dataC.name
         imageBanner.load(args.dataC.banner)
         imageLeader.load(args.dataC.leader?.photo)
-     // textDescription.text=args.dataC.description
+        textDescription.text=args.dataC.description
 
 
 

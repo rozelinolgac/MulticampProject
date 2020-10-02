@@ -6,7 +6,7 @@ import retrofit2.http.GET
 
 interface ProjectApi {
    @GET("multicamp/communities")
- suspend  fun getTopCommunities() : arrayResponce
+ suspend fun getTopCommunities() : arrayResponce
 
 
 }

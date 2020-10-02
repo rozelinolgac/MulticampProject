@@ -4,12 +4,10 @@ import android.os.Parcelable
 import kotlinx.android.parcel.Parcelize
 import kotlinx.serialization.Serializable
 
-@Serializable
-data class arrayResponce(
-    val articles: List<Article>?
-)
+//@Serializable
+class arrayResponce:ArrayList<Article>()
 
-@Serializable
+//@Serializable
 @Parcelize
 data class Article(
     val name: String?,
@@ -19,7 +17,7 @@ data class Article(
     val links: Links?,
     ):Parcelable
 
-@Serializable
+//@Serializable
 @Parcelize
 
 data class Leader(
@@ -27,7 +25,7 @@ data class Leader(
     val photo: String?,
 ):Parcelable
 
-@Serializable
+//@Serializable
 @Parcelize
 data class Links(
     val instagram: String?,
