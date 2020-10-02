@@ -33,3 +33,6 @@ data class Links(
     val twitter: String?,
     val youtuber: String?,
 ):Parcelable
+
+
+//deneme

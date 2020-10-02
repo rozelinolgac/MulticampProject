@@ -18,7 +18,7 @@ class secondFragment : Fragment(R.layout.fragment_second) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        textViewName.text=args.dataC.name
+        textViewName.text=args.dataC.leader?.name
         imageBanner.load(args.dataC.banner)
         imageLeader.load(args.dataC.leader?.photo)
         textDescription.text=args.dataC.description

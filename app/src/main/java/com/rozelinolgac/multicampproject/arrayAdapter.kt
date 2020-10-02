@@ -1,10 +1,12 @@
 package com.rozelinolgac.multicampproject
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import coil.load
 import com.rozelinolgac.multicampproject.model.Article
+import com.rozelinolgac.multicampproject.model.arrayResponce
 import kotlinx.android.synthetic.main.item_array.view.*
 
 class ArrayAdapter(
@@ -29,9 +31,7 @@ class ArrayViewHolder( view: View,) :RecyclerView.ViewHolder(view){
         itemView.imageView.load(article.banner)
 
 
-
-
-        itemView.setOnClickListener {
+        itemView.imageView.setOnClickListener {
             onClick(article)
         }
 

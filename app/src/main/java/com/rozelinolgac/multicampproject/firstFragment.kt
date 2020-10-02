@@ -10,9 +10,10 @@ import com.rozelinolgac.multicampproject.model.arrayResponce
 import kotlinx.android.synthetic.main.fragment_first.*
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.Dispatchers
-
+import android.widget.LinearLayout
 
 class firstFragment : Fragment(R.layout.fragment_first) {
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
@@ -21,7 +22,7 @@ class firstFragment : Fragment(R.layout.fragment_first) {
                 RetrofitProvider.projectApi.getTopCommunities()
 
 
-
+//Log.e("Tag",response.size.toString())
 
             recyclerViewArticles.adapter=
                 ArrayAdapter(response.toMutableList()){
