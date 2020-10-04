@@ -44,7 +44,7 @@
         android:layout_marginEnd="8dp"
         android:fontFamily="sans-serif-black"
         android:text="TextView"
-        android:textColor="#FFFFFF"
+        android:textColor="#131313"
         android:textStyle="italic" />
 
 </LinearLayout>
